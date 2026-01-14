@@ -4,7 +4,6 @@ services:
     container_name: plex
     image: plexinc/pms-docker
     restart: unless-stopped
-    privileged: true
     environment:
       - TZ=<timezone>
       - PLEX_CLAIM=<claimToken>
